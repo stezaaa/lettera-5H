@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamentela di Novembre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f1e1; /* Colore di sfondo autunnale */
+            color: #3a3a3a; /* Colore del testo */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8e735b; /* Colore di novembre: marrone autunnale */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff7f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #b09a6e; /* Bottone in stile autunnale */
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #9a7f55;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lettera di Novembre</h1>
+</header>
+
+<main>
+    <p id="lamentela">
+        Cari studenti della quinta,
+        <br><br>
+        Oggi è un giorno triste per il vostro professore. Mi trovo qui a scrivere queste parole con un cuore pieno di delusione. La lezione su Git, la lezione che avevo preparato con tanta cura e passione, quella che avreste dovuto davvero seguire con attenzione, è stata abbandonata da molti di voi. 
+        <br><br>
+        Come è possibile che, in un momento così cruciale per il nostro percorso, non vi siate presentati in massa? Avete perso un'opportunità unica di imparare qualcosa che vi sarebbe stato utile per tutta la vita! Siete davvero così disinteressati a diventare sviluppatori competenti? La lezione di Git non è solo un semplice esercizio, è la chiave per la gestione del vostro futuro digitale!
+        <br><br>
+        Non posso fare a meno di chiedermi se abbiate compreso la gravità di questa assenza. Spero che da ora in poi sappiate darvi una mossa, o rischiate di trovarvi indietro quando sarà troppo tardi. 
+        <br><br>
+        Con affetto,
+        <br>
+        Il vostro Professore del 21° secolo
+    </p>
+    <button onclick="ingrandisciLamentela()">Clicca per ingrandire la lamentela</button>
+</main>
+
+<script>
+    function ingrandisciLamentela() {
+        var lamentela = document.getElementById('lamentela');
+        var currentSize = window.getComputedStyle(lamentela).fontSize;
+        var newSize = parseInt(currentSize) * 1.5; // Aumento del 50% del testo
+        lamentela.style.fontSize = newSize + 'px';
+    }
+</script>
+
+</body>
+</html>
